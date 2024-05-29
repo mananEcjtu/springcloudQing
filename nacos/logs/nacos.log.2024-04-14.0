@@ -1,0 +1,320 @@
+2024-04-14 22:19:18,566 INFO Starting Nacos v1.4.1 on LAPTOP-L597GE65 with PID 16840 (D:\idea\SpringcloudStudy\nacos\target\nacos-server.jar started by 马楠 in D:\idea\SpringcloudStudy\nacos)
+
+2024-04-14 22:19:18,568 INFO The following profiles are active: standalone
+
+2024-04-14 22:19:21,260 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2de366bb' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2024-04-14 22:19:21,266 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2024-04-14 22:19:21,733 INFO Tomcat initialized with port(s): 8848 (http)
+
+2024-04-14 22:19:21,770 INFO Starting service [Tomcat]
+
+2024-04-14 22:19:21,771 INFO Starting Servlet engine: [Apache Tomcat/9.0.38]
+
+2024-04-14 22:19:21,944 WARN Failed to scan [jar:file:/D:/idea/SpringcloudStudy/nacos/target/nacos-server.jar!/BOOT-INF/lib/spring-webmvc-5.1.18.RELEASE.jar!/] from classloader hierarchy
+
+java.io.IOException: Unable to open root Jar file 'war:file:/D:/idea/SpringcloudStudy/nacos/target/nacos-server.jar*/BOOT-INF/lib/spring-webmvc-5.1.18.RELEASE.jar'
+	at org.springframework.boot.loader.jar.Handler.getRootJarFile(Handler.java:318)
+	at org.springframework.boot.loader.jar.Handler.getRootJarFileFromUrl(Handler.java:300)
+	at org.springframework.boot.loader.jar.Handler.openConnection(Handler.java:86)
+	at java.base/java.net.URL.openConnection(URL.java:1126)
+	at java.base/java.net.URL.openStream(URL.java:1192)
+	at org.apache.tomcat.util.descriptor.tld.TldResourcePath.openStream(TldResourcePath.java:127)
+	at org.apache.tomcat.util.descriptor.tld.TldParser.parse(TldParser.java:61)
+	at org.apache.jasper.servlet.TldScanner.parseTld(TldScanner.java:275)
+	at org.apache.jasper.servlet.TldScanner$TldScannerCallback.scan(TldScanner.java:315)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:387)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:318)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:270)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:233)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:83)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5128)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:843)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:486)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:105)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:416)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.alibaba.nacos.Nacos.main(Nacos.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:467)
+Caused by: java.lang.IllegalStateException: Not a file URL
+	at org.springframework.boot.loader.jar.Handler.getRootJarFile(Handler.java:306)
+	... 60 common frames omitted
+2024-04-14 22:19:22,110 INFO At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+2024-04-14 22:19:22,114 INFO Initializing Spring embedded WebApplicationContext
+
+2024-04-14 22:19:22,114 INFO Root WebApplicationContext: initialization completed in 3476 ms
+
+2024-04-14 22:19:22,657 INFO HikariPool-1 - Starting...
+
+2024-04-14 22:19:22,664 WARN Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+
+2024-04-14 22:19:22,946 INFO HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+
+2024-04-14 22:19:22,949 INFO HikariPool-1 - Start completed.
+
+2024-04-14 22:19:23,755 INFO Nacos-related cluster resource initialization
+
+2024-04-14 22:19:23,770 INFO The cluster resource is initialized
+
+2024-04-14 22:19:24,211 INFO Reflections took 52 ms to scan 1 urls, producing 4 keys and 6 values 
+
+2024-04-14 22:19:24,241 INFO Reflections took 4 ms to scan 1 urls, producing 6 keys and 26 values 
+
+2024-04-14 22:19:24,257 INFO Reflections took 3 ms to scan 1 urls, producing 3 keys and 15 values 
+
+2024-04-14 22:19:24,265 INFO Reflections took 2 ms to scan 1 urls, producing 2 keys and 12 values 
+
+2024-04-14 22:19:25,011 INFO Initializing ExecutorService 'applicationTaskExecutor'
+
+2024-04-14 22:19:25,144 INFO Adding welcome page: class path resource [static/index.html]
+
+2024-04-14 22:19:25,577 INFO Creating filter chain: Ant [pattern='/**'], []
+
+2024-04-14 22:19:25,611 INFO Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b61bf11, org.springframework.security.web.context.SecurityContextPersistenceFilter@4a92c6a9, org.springframework.security.web.header.HeaderWriterFilter@54e12f4c, org.springframework.security.web.csrf.CsrfFilter@1835dc92, org.springframework.security.web.authentication.logout.LogoutFilter@315105f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4cb702ce, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b88b8e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40247d48, org.springframework.security.web.session.SessionManagementFilter@21263314, org.springframework.security.web.access.ExceptionTranslationFilter@30c3ae63]
+
+2024-04-14 22:19:25,715 INFO Initializing ExecutorService 'taskScheduler'
+
+2024-04-14 22:19:25,739 INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+
+2024-04-14 22:19:25,895 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+
+2024-04-14 22:19:25,900 INFO Started Nacos in 8.543 seconds (JVM running for 9.541)
+
+2024-04-14 22:19:25,901 INFO Nacos started successfully in stand alone mode. use embedded storage
+
+2024-04-14 22:19:39,670 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2024-04-14 22:19:39,670 INFO Initializing Servlet 'dispatcherServlet'
+
+2024-04-14 22:19:39,683 INFO Completed initialization in 13 ms
+
+2024-04-14 22:22:34,114 WARN [HttpClientBeanHolder] Start destroying common HttpClient
+
+2024-04-14 22:22:34,114 WARN [ConfigServer-HttpClientManager] Start destroying NacosRestTemplate
+
+2024-04-14 22:22:34,114 WARN [WatchFileCenter] start close
+
+2024-04-14 22:22:34,115 WARN [ConfigServer-HttpClientManager] Destruction of the end
+
+2024-04-14 22:22:34,116 WARN [HttpClientBeanHolder] Destruction of the end
+
+2024-04-14 22:22:34,114 WARN [NotifyCenter] Start destroying Publisher
+
+2024-04-14 22:22:34,114 WARN [ThreadPoolManager] Start destroying ThreadPool
+
+2024-04-14 22:22:34,114 WARN [WatchFileCenter] start to shutdown this watcher which is watch : D:\idea\SpringcloudStudy\nacos\conf
+
+2024-04-14 22:22:34,116 WARN [WatchFileCenter] already closed
+
+2024-04-14 22:22:34,116 WARN [NotifyCenter] Destruction of the end
+
+2024-04-14 22:22:34,117 INFO Shutting down ExecutorService 'taskScheduler'
+
+2024-04-14 22:22:34,118 INFO Shutting down ExecutorService 'applicationTaskExecutor'
+
+2024-04-14 22:22:47,318 WARN [ThreadPoolManager] Destruction of the end
+
+2024-04-14 22:32:19,808 INFO Starting Nacos v1.4.1 on LAPTOP-L597GE65 with PID 2092 (D:\idea\SpringcloudStudy\nacos\target\nacos-server.jar started by 马楠 in D:\idea\SpringcloudStudy\nacos)
+
+2024-04-14 22:32:19,808 INFO The following profiles are active: standalone
+
+2024-04-14 22:32:22,433 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5cc5b667' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2024-04-14 22:32:22,441 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2024-04-14 22:32:22,873 INFO Tomcat initialized with port(s): 8848 (http)
+
+2024-04-14 22:32:22,906 INFO Starting service [Tomcat]
+
+2024-04-14 22:32:22,907 INFO Starting Servlet engine: [Apache Tomcat/9.0.38]
+
+2024-04-14 22:32:23,059 WARN Failed to scan [jar:file:/D:/idea/SpringcloudStudy/nacos/target/nacos-server.jar!/BOOT-INF/lib/spring-webmvc-5.1.18.RELEASE.jar!/] from classloader hierarchy
+
+java.io.IOException: Unable to open root Jar file 'war:file:/D:/idea/SpringcloudStudy/nacos/target/nacos-server.jar*/BOOT-INF/lib/spring-webmvc-5.1.18.RELEASE.jar'
+	at org.springframework.boot.loader.jar.Handler.getRootJarFile(Handler.java:318)
+	at org.springframework.boot.loader.jar.Handler.getRootJarFileFromUrl(Handler.java:300)
+	at org.springframework.boot.loader.jar.Handler.openConnection(Handler.java:86)
+	at java.base/java.net.URL.openConnection(URL.java:1126)
+	at java.base/java.net.URL.openStream(URL.java:1192)
+	at org.apache.tomcat.util.descriptor.tld.TldResourcePath.openStream(TldResourcePath.java:127)
+	at org.apache.tomcat.util.descriptor.tld.TldParser.parse(TldParser.java:61)
+	at org.apache.jasper.servlet.TldScanner.parseTld(TldScanner.java:275)
+	at org.apache.jasper.servlet.TldScanner$TldScannerCallback.scan(TldScanner.java:315)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:387)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:318)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:270)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:233)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:83)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5128)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:843)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:486)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:105)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:416)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.alibaba.nacos.Nacos.main(Nacos.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:467)
+Caused by: java.lang.IllegalStateException: Not a file URL
+	at org.springframework.boot.loader.jar.Handler.getRootJarFile(Handler.java:306)
+	... 60 common frames omitted
+2024-04-14 22:32:23,223 INFO At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+2024-04-14 22:32:23,226 INFO Initializing Spring embedded WebApplicationContext
+
+2024-04-14 22:32:23,226 INFO Root WebApplicationContext: initialization completed in 3331 ms
+
+2024-04-14 22:32:23,730 INFO HikariPool-1 - Starting...
+
+2024-04-14 22:32:23,737 WARN Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+
+2024-04-14 22:32:24,018 INFO HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+
+2024-04-14 22:32:24,021 INFO HikariPool-1 - Start completed.
+
+2024-04-14 22:32:24,777 INFO Nacos-related cluster resource initialization
+
+2024-04-14 22:32:24,789 INFO The cluster resource is initialized
+
+2024-04-14 22:32:25,212 INFO Reflections took 47 ms to scan 1 urls, producing 4 keys and 6 values 
+
+2024-04-14 22:32:25,238 INFO Reflections took 4 ms to scan 1 urls, producing 6 keys and 26 values 
+
+2024-04-14 22:32:25,255 INFO Reflections took 4 ms to scan 1 urls, producing 3 keys and 15 values 
+
+2024-04-14 22:32:25,264 INFO Reflections took 2 ms to scan 1 urls, producing 2 keys and 12 values 
+
+2024-04-14 22:32:25,973 INFO Initializing ExecutorService 'applicationTaskExecutor'
+
+2024-04-14 22:32:26,104 INFO Adding welcome page: class path resource [static/index.html]
+
+2024-04-14 22:32:26,616 INFO Creating filter chain: Ant [pattern='/**'], []
+
+2024-04-14 22:32:26,679 INFO Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@383caf89, org.springframework.security.web.context.SecurityContextPersistenceFilter@2db33feb, org.springframework.security.web.header.HeaderWriterFilter@3aaa3c39, org.springframework.security.web.csrf.CsrfFilter@798256c5, org.springframework.security.web.authentication.logout.LogoutFilter@4cb702ce, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58658f63, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39ee94de, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64c781a9, org.springframework.security.web.session.SessionManagementFilter@43c57161, org.springframework.security.web.access.ExceptionTranslationFilter@6fff46bf]
+
+2024-04-14 22:32:26,827 INFO Initializing ExecutorService 'taskScheduler'
+
+2024-04-14 22:32:26,855 INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+
+2024-04-14 22:32:26,974 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+
+2024-04-14 22:32:26,981 INFO Started Nacos in 8.298 seconds (JVM running for 8.879)
+
+2024-04-14 22:32:26,981 INFO Nacos started successfully in stand alone mode. use embedded storage
+
+2024-04-14 22:32:27,162 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2024-04-14 22:32:27,162 INFO Initializing Servlet 'dispatcherServlet'
+
+2024-04-14 22:32:27,173 INFO Completed initialization in 11 ms
+
+2024-04-14 22:42:25,422 INFO [capacityManagement] start correct usage
+
+2024-04-14 22:42:25,434 INFO [capacityManagement] end correct usage, cost: 0s
+
+2024-04-14 22:42:25,596 WARN clearConfigHistory start
+
+2024-04-14 22:42:25,601 WARN clearConfigHistory, getBeforeStamp:2024-03-15 22:42:25.0, totalCount:5, pageSize:1000, removeTime:1
+
+2024-04-14 23:20:19,746 WARN clearConfigHistory start
+
+2024-04-14 23:20:19,748 WARN clearConfigHistory, getBeforeStamp:2024-03-15 23:20:19.0, totalCount:5, pageSize:1000, removeTime:1
+
+2024-04-14 23:20:27,858 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m33s465ms856µs200ns).
+
+2024-04-14 23:22:28,881 INFO [capacityManagement] start correct usage
+
+2024-04-14 23:22:28,882 INFO [capacityManagement] end correct usage, cost: 0s
+
+2024-04-14 23:30:19,759 WARN clearConfigHistory start
+
+2024-04-14 23:30:19,760 WARN clearConfigHistory, getBeforeStamp:2024-03-15 23:30:19.0, totalCount:5, pageSize:1000, removeTime:1
+
+2024-04-14 23:32:28,887 INFO [capacityManagement] start correct usage
+
+2024-04-14 23:32:28,888 INFO [capacityManagement] end correct usage, cost: 0s
+
+2024-04-14 23:48:56,791 WARN clearConfigHistory start
+
+2024-04-14 23:48:56,794 WARN clearConfigHistory, getBeforeStamp:2024-03-15 23:48:56.0, totalCount:5, pageSize:1000, removeTime:1
+
+2024-04-14 23:49:04,298 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m6s146ms584µs).
+

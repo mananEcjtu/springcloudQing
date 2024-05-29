@@ -1,0 +1,6 @@
+2024-04-14 22:22:38,238 ERROR [UPDATE-DOMAIN] Exception while taking item from LinkedBlockingDeque.
+
+2024-04-14 22:34:21,924 INFO DEFAULT_GROUP@@bookserver {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.159.1:8101:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2024-04-14 22:34:21,926 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookserver, ips: 192.168.159.1:8101_true,
+

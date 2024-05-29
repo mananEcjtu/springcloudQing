@@ -1,0 +1,447 @@
+2024-04-15 11:09:24,713 INFO GlobalConfig{taskDispatchPeriod=2000, batchSyncKeyCount=1000, syncRetryDelay=5000, dataWarmup=false, expireInstance=true, loadDataRetryDelayMillis=30000}
+
+2024-04-15 11:09:25,324 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
+
+2024-04-15 11:09:25,325 INFO listen for service meta change
+
+2024-04-15 11:09:29,705 INFO [NACOS-DISTRO] healthy server list changed, old: [192.168.159.1:8848], new: [192.168.159.1:8848]
+
+2024-04-15 11:09:39,975 INFO creating empty service public:DEFAULT_GROUP@@bookserver
+
+2024-04-15 11:09:40,110 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@bookserver","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1713150579977,"checksum":"6cee5bdeb61085c0cb07d25b5d76bc32","clusterMap":{},"empty":true}
+
+2024-04-15 11:09:40,115 WARN cluster: DEFAULT not found, ip: {"instanceId":"192.168.159.1#8101#DEFAULT#DEFAULT_GROUP@@bookserver","ip":"192.168.159.1","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@bookserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713150579966,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2024-04-15 11:09:40,119 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@bookserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8101#DEFAULT#DEFAULT_GROUP@@bookserver","ip":"192.168.159.1","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@bookserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713150579966,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 11:09:55,412 INFO creating empty service public:DEFAULT_GROUP@@borrowserver
+
+2024-04-15 11:09:55,412 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@borrowserver","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1713150595412,"checksum":"e34f051341e0de0d1d81e7322570630d","clusterMap":{},"empty":true}
+
+2024-04-15 11:09:55,413 WARN cluster: DEFAULT not found, ip: {"instanceId":"192.168.159.1#8083#DEFAULT#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713150595411,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2024-04-15 11:09:55,413 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@borrowserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8083#DEFAULT#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713150595411,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 11:09:59,519 INFO creating empty service public:DEFAULT_GROUP@@userserver
+
+2024-04-15 11:09:59,520 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@userserver","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1713150599519,"checksum":"1662c30e3e414f8a5ef14dc40ebd1200","clusterMap":{},"empty":true}
+
+2024-04-15 11:09:59,520 WARN cluster: DEFAULT not found, ip: {"instanceId":"192.168.159.1#8082#DEFAULT#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713150599519,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2024-04-15 11:09:59,520 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@userserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8082#DEFAULT#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713150599519,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 11:28:47,193 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@borrowserver, ip: {"instanceId":"192.168.159.1#8083#DEFAULT#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713151692837,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}
+
+2024-04-15 11:28:47,246 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@borrowserver, value: {"instanceList":[]}
+
+2024-04-15 11:31:15,332 WARN namespace : public, [DEFAULT_GROUP@@borrowserver] services are automatically cleaned
+
+2024-04-15 11:31:15,340 INFO [DEAD-SERVICE] {"name":"DEFAULT_GROUP@@borrowserver","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":5,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1713151727247,"checksum":"dd8eec3fa08c1de2410a5a7ad71491d6","clusterMap":{"DEFAULT":{"serviceName":"DEFAULT_GROUP@@borrowserver","name":"DEFAULT","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"empty":true,"defIPPort":80}},"empty":true}
+
+2024-04-15 11:49:54,939 INFO creating empty service public:DEFAULT_GROUP@@borrowserver
+
+2024-04-15 11:49:54,940 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@borrowserver","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1713152994939,"checksum":"e34f051341e0de0d1d81e7322570630d","clusterMap":{},"empty":true}
+
+2024-04-15 11:49:54,940 WARN cluster: DEFAULT not found, ip: {"instanceId":"192.168.159.1#8083#DEFAULT#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713152994939,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2024-04-15 11:49:54,940 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@borrowserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8083#DEFAULT#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713152994939,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 11:52:00,231 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@borrowserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8083#DEFAULT#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713153120231,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 12:04:53,043 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@borrowserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8083#DEFAULT#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713153893043,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 12:07:26,642 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@borrowserver, ip: {"instanceId":"192.168.159.1#8083#DEFAULT#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713154013298,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}
+
+2024-04-15 12:07:26,645 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@borrowserver, value: {"instanceList":[]}
+
+2024-04-15 12:07:29,848 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@userserver, ip: {"instanceId":"192.168.159.1#8082#DEFAULT#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8082,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713154016380,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}
+
+2024-04-15 12:07:29,850 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@userserver, value: {"instanceList":[]}
+
+2024-04-15 12:07:30,519 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@bookserver, ip: {"instanceId":"192.168.159.1#8101#DEFAULT#DEFAULT_GROUP@@bookserver","ip":"192.168.159.1","port":8101,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@bookserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713154016908,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}
+
+2024-04-15 12:07:30,521 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@bookserver, value: {"instanceList":[]}
+
+2024-04-15 12:09:45,334 WARN namespace : public, [DEFAULT_GROUP@@bookserver] services are automatically cleaned
+
+2024-04-15 12:09:45,334 WARN namespace : public, [DEFAULT_GROUP@@borrowserver] services are automatically cleaned
+
+2024-04-15 12:09:45,334 WARN namespace : public, [DEFAULT_GROUP@@userserver] services are automatically cleaned
+
+2024-04-15 12:09:45,335 INFO [DEAD-SERVICE] {"name":"DEFAULT_GROUP@@bookserver","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":5,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1713154050521,"checksum":"1eb70a08590d29d849c1c539153f97f9","clusterMap":{"DEFAULT":{"serviceName":"DEFAULT_GROUP@@bookserver","name":"DEFAULT","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"empty":true,"defIPPort":80}},"empty":true}
+
+2024-04-15 12:09:45,335 INFO [DEAD-SERVICE] {"name":"DEFAULT_GROUP@@borrowserver","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":5,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1713154046645,"checksum":"dd8eec3fa08c1de2410a5a7ad71491d6","clusterMap":{"DEFAULT":{"serviceName":"DEFAULT_GROUP@@borrowserver","name":"DEFAULT","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"empty":true,"defIPPort":80}},"empty":true}
+
+2024-04-15 12:09:45,336 INFO [DEAD-SERVICE] {"name":"DEFAULT_GROUP@@userserver","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":5,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1713154049850,"checksum":"e630112d4483d78189787e2d1e81388e","clusterMap":{"DEFAULT":{"serviceName":"DEFAULT_GROUP@@userserver","name":"DEFAULT","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"empty":true,"defIPPort":80}},"empty":true}
+
+2024-04-15 12:45:50,305 INFO creating empty service public:DEFAULT_GROUP@@userserver
+
+2024-04-15 12:45:50,306 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@userserver","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1713156350305,"checksum":"1662c30e3e414f8a5ef14dc40ebd1200","clusterMap":{},"empty":true}
+
+2024-04-15 12:45:50,306 WARN cluster: DEFAULT not found, ip: {"instanceId":"192.168.159.1#8101#DEFAULT#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713156350305,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2024-04-15 12:45:50,306 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@userserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8101#DEFAULT#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713156350305,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 12:46:00,749 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@userserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8101#DEFAULT#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713156360327,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000},{"instanceId":"192.168.159.1#8102#DEFAULT#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8102,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713156360748,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 12:46:09,342 INFO creating empty service public:DEFAULT_GROUP@@bookserver
+
+2024-04-15 12:46:09,342 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@bookserver","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1713156369342,"checksum":"6cee5bdeb61085c0cb07d25b5d76bc32","clusterMap":{},"empty":true}
+
+2024-04-15 12:46:09,343 WARN cluster: DEFAULT not found, ip: {"instanceId":"192.168.159.1#8201#DEFAULT#DEFAULT_GROUP@@bookserver","ip":"192.168.159.1","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@bookserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713156369342,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2024-04-15 12:46:09,343 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@bookserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8201#DEFAULT#DEFAULT_GROUP@@bookserver","ip":"192.168.159.1","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@bookserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713156369342,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 12:46:20,095 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@bookserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8202#DEFAULT#DEFAULT_GROUP@@bookserver","ip":"192.168.159.1","port":8202,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@bookserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713156380095,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000},{"instanceId":"192.168.159.1#8201#DEFAULT#DEFAULT_GROUP@@bookserver","ip":"192.168.159.1","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@bookserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713156379368,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 12:46:37,266 INFO creating empty service public:DEFAULT_GROUP@@borrowserver
+
+2024-04-15 12:46:37,266 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@borrowserver","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1713156397266,"checksum":"e34f051341e0de0d1d81e7322570630d","clusterMap":{},"empty":true}
+
+2024-04-15 12:46:37,267 WARN cluster: DEFAULT not found, ip: {"instanceId":"192.168.159.1#8083#DEFAULT#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713156397266,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2024-04-15 12:46:37,267 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@borrowserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8083#DEFAULT#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713156397266,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 12:52:55,029 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@bookserver, ip: {"instanceId":"192.168.159.1#8202#DEFAULT#DEFAULT_GROUP@@bookserver","ip":"192.168.159.1","port":8202,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@bookserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713156740815,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}
+
+2024-04-15 12:52:55,031 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@bookserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8201#DEFAULT#DEFAULT_GROUP@@bookserver","ip":"192.168.159.1","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@bookserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713156770165,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 13:46:37,065 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@userserver
+
+2024-04-15 13:46:38,608 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@userserver
+
+2024-04-15 13:46:46,074 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@userserver, ip: {"instanceId":"192.168.159.1#8101#DEFAULT#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8101,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713159972076,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}
+
+2024-04-15 13:46:46,077 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@userserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8102#DEFAULT#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8102,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713159977597,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 13:46:47,083 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@userserver
+
+2024-04-15 13:46:48,623 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@userserver
+
+2024-04-15 13:46:51,076 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@userserver, ip: {"instanceId":"192.168.159.1#8102#DEFAULT#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8102,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713159977597,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}
+
+2024-04-15 13:46:51,077 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@userserver, value: {"instanceList":[]}
+
+2024-04-15 13:46:54,982 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@userserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8101#DEFAULT#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160014982,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 13:47:03,372 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@userserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8101#DEFAULT#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160019986,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000},{"instanceId":"192.168.159.1#8102#DEFAULT#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8102,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160023371,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 13:52:23,164 WARN cluster: Chengdu not found, ip: {"instanceId":"192.168.159.1#8101#Chengdu#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160343164,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2024-04-15 13:52:23,164 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@userserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8101#DEFAULT#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160335596,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000},{"instanceId":"192.168.159.1#8101#Chengdu#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160343164,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000},{"instanceId":"192.168.159.1#8102#DEFAULT#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8102,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160338962,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 13:52:27,251 WARN cluster: Chongqing not found, ip: {"instanceId":"192.168.159.1#8102#Chongqing#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8102,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chongqing","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160347251,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2024-04-15 13:52:27,251 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@userserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8101#Chengdu#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160335596,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000},{"instanceId":"192.168.159.1#8102#Chongqing#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8102,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chongqing","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160347251,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000},{"instanceId":"192.168.159.1#8102#DEFAULT#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8102,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160338962,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000},{"instanceId":"192.168.159.1#8101#DEFAULT#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160335596,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 13:52:46,619 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@userserver, ip: {"instanceId":"192.168.159.1#8101#DEFAULT#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8101,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160335596,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}
+
+2024-04-15 13:52:46,620 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@userserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8101#Chengdu#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8101,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160335596,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000},{"instanceId":"192.168.159.1#8102#Chongqing#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8102,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"Chongqing","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160338962,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000},{"instanceId":"192.168.159.1#8102#DEFAULT#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8102,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160338962,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 13:52:47,625 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@userserver
+
+2024-04-15 13:52:51,625 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@userserver, ip: {"instanceId":"192.168.159.1#8102#DEFAULT#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8102,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160338962,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}
+
+2024-04-15 13:52:51,627 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@userserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8101#Chengdu#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160368216,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000},{"instanceId":"192.168.159.1#8102#Chongqing#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8102,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"Chongqing","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160338962,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 14:00:00,692 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@borrowserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8083#DEFAULT#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160800691,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 14:00:06,321 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@userserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8101#Chengdu#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160806321,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000},{"instanceId":"192.168.159.1#8102#Chongqing#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8102,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chongqing","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160803117,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 14:00:11,834 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@userserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8101#Chengdu#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160811326,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000},{"instanceId":"192.168.159.1#8102#Chongqing#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8102,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chongqing","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160811834,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 14:00:16,516 WARN cluster: Chengdu not found, ip: {"instanceId":"192.168.159.1#8201#Chengdu#DEFAULT_GROUP@@bookserver","ip":"192.168.159.1","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@bookserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160816516,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2024-04-15 14:00:16,516 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@bookserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8201#Chengdu#DEFAULT_GROUP@@bookserver","ip":"192.168.159.1","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@bookserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160816516,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000},{"instanceId":"192.168.159.1#8201#DEFAULT#DEFAULT_GROUP@@bookserver","ip":"192.168.159.1","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@bookserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160807674,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 14:00:19,139 WARN cluster: Chongqing not found, ip: {"instanceId":"192.168.159.1#8202#Chongqing#DEFAULT_GROUP@@bookserver","ip":"192.168.159.1","port":8202,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chongqing","serviceName":"DEFAULT_GROUP@@bookserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160819139,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2024-04-15 14:00:19,139 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@bookserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8201#Chengdu#DEFAULT_GROUP@@bookserver","ip":"192.168.159.1","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@bookserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160807674,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000},{"instanceId":"192.168.159.1#8201#DEFAULT#DEFAULT_GROUP@@bookserver","ip":"192.168.159.1","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@bookserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160807674,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000},{"instanceId":"192.168.159.1#8202#Chongqing#DEFAULT_GROUP@@bookserver","ip":"192.168.159.1","port":8202,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chongqing","serviceName":"DEFAULT_GROUP@@bookserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160819139,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 14:00:41,653 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@bookserver, ip: {"instanceId":"192.168.159.1#8201#DEFAULT#DEFAULT_GROUP@@bookserver","ip":"192.168.159.1","port":8201,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@bookserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160807674,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}
+
+2024-04-15 14:00:41,656 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@bookserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8201#Chengdu#DEFAULT_GROUP@@bookserver","ip":"192.168.159.1","port":8201,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@bookserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160807674,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000},{"instanceId":"192.168.159.1#8202#Chongqing#DEFAULT_GROUP@@bookserver","ip":"192.168.159.1","port":8202,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chongqing","serviceName":"DEFAULT_GROUP@@bookserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713160839184,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 14:00:42,671 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@bookserver
+
+2024-04-15 14:05:00,485 WARN cluster: Chengdu not found, ip: {"instanceId":"192.168.159.1#8083#Chengdu#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713161100485,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2024-04-15 14:05:00,485 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@borrowserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8083#DEFAULT#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713161091224,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000},{"instanceId":"192.168.159.1#8083#Chengdu#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713161100485,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 14:05:17,472 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@borrowserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8083#Chengdu#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713161117451,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 14:05:24,720 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@borrowserver, ip: {"instanceId":"192.168.159.1#8083#DEFAULT#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713161091224,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}
+
+2024-04-15 14:05:24,721 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@borrowserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8083#Chengdu#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713161091224,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]}
+
+2024-04-15 14:05:29,726 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@borrowserver, ip: {"instanceId":"192.168.159.1#8083#Chengdu#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713161091224,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}
+
+2024-04-15 14:05:29,727 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@borrowserver, value: {"instanceList":[]}
+
+2024-04-15 14:05:42,383 WARN [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2024-04-15 14:05:42,387 WARN [NamingServerHttpClientManager] Destruction of the end
+
+2024-04-15 14:05:42,804 WARN Exception while processing client beat time out.
+
+java.lang.IllegalStateException: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@402e37bc has been closed already
+	at org.springframework.context.support.AbstractApplicationContext.assertBeanFactoryActive(AbstractApplicationContext.java:1090)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1123)
+	at com.alibaba.nacos.sys.utils.ApplicationUtils.getBean(ApplicationUtils.java:140)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.getDistroMapper(ClientBeatCheckTask.java:61)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.run(ClientBeatCheckTask.java:79)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2024-04-15 14:05:44,743 WARN Exception while processing client beat time out.
+
+java.lang.IllegalStateException: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@402e37bc has been closed already
+	at org.springframework.context.support.AbstractApplicationContext.assertBeanFactoryActive(AbstractApplicationContext.java:1090)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1123)
+	at com.alibaba.nacos.sys.utils.ApplicationUtils.getBean(ApplicationUtils.java:140)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.getDistroMapper(ClientBeatCheckTask.java:61)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.run(ClientBeatCheckTask.java:79)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2024-04-15 14:05:47,148 WARN Exception while processing client beat time out.
+
+java.lang.IllegalStateException: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@402e37bc has been closed already
+	at org.springframework.context.support.AbstractApplicationContext.assertBeanFactoryActive(AbstractApplicationContext.java:1090)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1123)
+	at com.alibaba.nacos.sys.utils.ApplicationUtils.getBean(ApplicationUtils.java:140)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.getDistroMapper(ClientBeatCheckTask.java:61)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.run(ClientBeatCheckTask.java:79)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2024-04-15 14:05:47,816 WARN Exception while processing client beat time out.
+
+java.lang.IllegalStateException: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@402e37bc has been closed already
+	at org.springframework.context.support.AbstractApplicationContext.assertBeanFactoryActive(AbstractApplicationContext.java:1090)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1123)
+	at com.alibaba.nacos.sys.utils.ApplicationUtils.getBean(ApplicationUtils.java:140)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.getDistroMapper(ClientBeatCheckTask.java:61)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.run(ClientBeatCheckTask.java:79)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2024-04-15 14:05:49,751 WARN Exception while processing client beat time out.
+
+java.lang.IllegalStateException: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@402e37bc has been closed already
+	at org.springframework.context.support.AbstractApplicationContext.assertBeanFactoryActive(AbstractApplicationContext.java:1090)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1123)
+	at com.alibaba.nacos.sys.utils.ApplicationUtils.getBean(ApplicationUtils.java:140)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.getDistroMapper(ClientBeatCheckTask.java:61)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.run(ClientBeatCheckTask.java:79)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2024-04-15 14:05:49,983 ERROR [HEALTH-CHECK] error while processing NIO task
+
+java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@40d1b9[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@26736f20[Wrapped task = java.util.concurrent.FutureTask@574d099[Not completed, task = com.alibaba.nacos.naming.healthcheck.TcpSuperSenseProcessor$TaskProcessor@76c73ec3]]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@61d84e08[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 87]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2057)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:827)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.delayedExecute(ScheduledThreadPoolExecutor.java:340)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.schedule(ScheduledThreadPoolExecutor.java:562)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.execute(ScheduledThreadPoolExecutor.java:705)
+	at java.base/java.util.concurrent.AbstractExecutorService.invokeAll(AbstractExecutorService.java:247)
+	at com.alibaba.nacos.naming.misc.GlobalExecutor.invokeAllTcpSuperSenseTask(GlobalExecutor.java:180)
+	at com.alibaba.nacos.naming.healthcheck.TcpSuperSenseProcessor.processTask(TcpSuperSenseProcessor.java:145)
+	at com.alibaba.nacos.naming.healthcheck.TcpSuperSenseProcessor.run(TcpSuperSenseProcessor.java:154)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2024-04-15 14:05:50,989 WARN tcp check started before last one finished, service: DEFAULT_GROUP@@borrowserver:Chengdu:192.168.159.1:8083
+
+2024-04-15 14:05:52,149 WARN Exception while processing client beat time out.
+
+java.lang.IllegalStateException: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@402e37bc has been closed already
+	at org.springframework.context.support.AbstractApplicationContext.assertBeanFactoryActive(AbstractApplicationContext.java:1090)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1123)
+	at com.alibaba.nacos.sys.utils.ApplicationUtils.getBean(ApplicationUtils.java:140)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.getDistroMapper(ClientBeatCheckTask.java:61)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.run(ClientBeatCheckTask.java:79)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2024-04-15 14:05:52,242 WARN tcp check started before last one finished, service: DEFAULT_GROUP@@borrowserver:Chengdu:192.168.159.1:8083
+
+2024-04-15 14:05:52,829 WARN Exception while processing client beat time out.
+
+java.lang.IllegalStateException: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@402e37bc has been closed already
+	at org.springframework.context.support.AbstractApplicationContext.assertBeanFactoryActive(AbstractApplicationContext.java:1090)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1123)
+	at com.alibaba.nacos.sys.utils.ApplicationUtils.getBean(ApplicationUtils.java:140)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.getDistroMapper(ClientBeatCheckTask.java:61)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.run(ClientBeatCheckTask.java:79)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2024-04-15 14:05:52,983 ERROR [HEALTH-CHECK] error while processing NIO task
+
+java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1668)
+	at java.base/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+	at com.alibaba.nacos.naming.healthcheck.TcpSuperSenseProcessor.processTask(TcpSuperSenseProcessor.java:137)
+	at com.alibaba.nacos.naming.healthcheck.TcpSuperSenseProcessor.run(TcpSuperSenseProcessor.java:154)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2024-04-15 14:05:53,807 WARN tcp check started before last one finished, service: DEFAULT_GROUP@@borrowserver:Chengdu:192.168.159.1:8083
+
+2024-04-15 14:05:54,761 WARN Exception while processing client beat time out.
+
+java.lang.IllegalStateException: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@402e37bc has been closed already
+	at org.springframework.context.support.AbstractApplicationContext.assertBeanFactoryActive(AbstractApplicationContext.java:1090)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1123)
+	at com.alibaba.nacos.sys.utils.ApplicationUtils.getBean(ApplicationUtils.java:140)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.getDistroMapper(ClientBeatCheckTask.java:61)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.run(ClientBeatCheckTask.java:79)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2024-04-15 14:05:55,768 WARN tcp check started before last one finished, service: DEFAULT_GROUP@@borrowserver:Chengdu:192.168.159.1:8083
+
+2024-04-15 14:05:58,208 WARN tcp check started before last one finished, service: DEFAULT_GROUP@@borrowserver:Chengdu:192.168.159.1:8083
+
+2024-04-15 14:06:39,626 INFO GlobalConfig{taskDispatchPeriod=2000, batchSyncKeyCount=1000, syncRetryDelay=5000, dataWarmup=false, expireInstance=true, loadDataRetryDelayMillis=30000}
+
+2024-04-15 14:06:40,519 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
+
+2024-04-15 14:06:40,520 INFO listen for service meta change
+
+2024-04-15 14:06:42,181 INFO creating empty service public:DEFAULT_GROUP@@bookserver
+
+2024-04-15 14:06:42,237 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@bookserver","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1713161202184,"checksum":"6cee5bdeb61085c0cb07d25b5d76bc32","clusterMap":{},"empty":true}
+
+2024-04-15 14:06:42,242 WARN cluster: Chongqing not found, ip: {"instanceId":"192.168.159.1#8202#Chongqing#DEFAULT_GROUP@@bookserver","ip":"192.168.159.1","port":8202,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chongqing","serviceName":"DEFAULT_GROUP@@bookserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713161202181,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2024-04-15 14:06:42,248 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@bookserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8202#Chongqing#DEFAULT_GROUP@@bookserver","ip":"192.168.159.1","port":8202,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chongqing","serviceName":"DEFAULT_GROUP@@bookserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713161202181,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2024-04-15 14:06:42,373 INFO creating empty service public:DEFAULT_GROUP@@userserver
+
+2024-04-15 14:06:42,374 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@userserver","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1713161202373,"checksum":"1662c30e3e414f8a5ef14dc40ebd1200","clusterMap":{},"empty":true}
+
+2024-04-15 14:06:42,374 WARN cluster: Chongqing not found, ip: {"instanceId":"192.168.159.1#8102#Chongqing#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8102,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chongqing","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713161202373,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2024-04-15 14:06:42,374 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@userserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8102#Chongqing#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8102,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chongqing","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713161202373,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2024-04-15 14:06:42,670 WARN cluster: Chengdu not found, ip: {"instanceId":"192.168.159.1#8101#Chengdu#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713161202670,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2024-04-15 14:06:42,670 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@userserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8101#Chengdu#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713161202670,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000},{"instanceId":"192.168.159.1#8102#Chongqing#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8102,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chongqing","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713161202373,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2024-04-15 14:06:42,901 WARN cluster: Chengdu not found, ip: {"instanceId":"192.168.159.1#8201#Chengdu#DEFAULT_GROUP@@bookserver","ip":"192.168.159.1","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@bookserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713161202901,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2024-04-15 14:06:42,902 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@bookserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8201#Chengdu#DEFAULT_GROUP@@bookserver","ip":"192.168.159.1","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@bookserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713161202901,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000},{"instanceId":"192.168.159.1#8202#Chongqing#DEFAULT_GROUP@@bookserver","ip":"192.168.159.1","port":8202,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chongqing","serviceName":"DEFAULT_GROUP@@bookserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713161202181,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2024-04-15 14:06:44,601 INFO [NACOS-DISTRO] healthy server list changed, old: [192.168.159.1:8848], new: [192.168.159.1:8848]
+
+2024-04-15 14:07:23,134 INFO creating empty service public:DEFAULT_GROUP@@borrowserver
+
+2024-04-15 14:07:23,245 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@borrowserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8083#Chengdu#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713161117451,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2024-04-15 14:07:23,245 WARN cluster: Chengdu not found, ip: {"instanceId":"192.168.159.1#8083#Chengdu#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713161117451,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2024-04-15 14:07:23,246 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@borrowserver","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1713161243245,"checksum":"d85a4e7adaf28a3365c4d37ed3f5e45c","clusterMap":{"Chengdu":{"serviceName":"DEFAULT_GROUP@@borrowserver","name":"Chengdu","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"empty":false,"defIPPort":80}},"empty":false}
+
+2024-04-15 14:07:23,264 INFO [CLUSTER-UPDATE] DEFAULT_GROUP@@borrowserver:Chengdu, defIPPort: -1 -> 80
+
+2024-04-15 14:07:23,264 INFO cluster size, new: 1, old: 1
+
+2024-04-15 14:07:23,264 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@borrowserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8083#Chengdu#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713161243134,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2024-04-15 14:07:23,267 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@borrowserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8083#Chengdu#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713161243134,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2024-04-15 17:30:05,256 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowserver
+
+2024-04-15 17:30:07,172 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowserver
+
+2024-04-15 17:30:07,248 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@borrowserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8083#Chengdu#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713173407245,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2024-04-15 17:30:08,240 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowserver
+
+2024-04-15 17:30:08,253 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowserver
+
+2024-04-15 17:44:03,775 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowserver
+
+2024-04-15 17:44:03,842 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@borrowserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8083#Chengdu#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713174243841,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2024-04-15 17:44:04,838 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowserver
+
+2024-04-15 17:44:04,851 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowserver
+
+2024-04-15 17:44:14,848 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowserver
+
+2024-04-15 17:47:55,205 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowserver
+
+2024-04-15 17:47:55,271 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@borrowserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8083#Chengdu#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713174475269,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2024-04-15 17:47:56,259 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowserver
+
+2024-04-15 17:47:56,287 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowserver
+
+2024-04-15 17:48:06,273 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowserver
+
+2024-04-15 17:53:52,633 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowserver
+
+2024-04-15 17:53:52,699 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@borrowserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8083#Chengdu#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713174832696,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2024-04-15 17:53:53,692 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowserver
+
+2024-04-15 17:53:53,706 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowserver
+
+2024-04-15 17:55:32,699 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowserver
+
+2024-04-15 17:55:35,183 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowserver
+
+2024-04-15 17:55:35,248 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@borrowserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8083#Chengdu#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713174935247,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2024-04-15 17:55:36,241 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowserver
+
+2024-04-15 17:55:36,255 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowserver
+
+2024-04-15 18:01:55,643 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowserver
+
+2024-04-15 18:02:00,487 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowserver
+
+2024-04-15 18:02:00,562 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@borrowserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8083#Chengdu#DEFAULT_GROUP@@borrowserver","ip":"192.168.159.1","port":8083,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":false,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@borrowserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713175320561,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2024-04-15 18:02:01,548 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowserver
+
+2024-04-15 18:02:01,578 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowserver
+
+2024-04-15 18:02:11,551 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowserver
+
+2024-04-15 23:33:38,843 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@userserver, value: {"instanceList":[{"instanceId":"192.168.159.1#8101#Chengdu#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chengdu","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713195218842,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000},{"instanceId":"192.168.159.1#8102#Chongqing#DEFAULT_GROUP@@userserver","ip":"192.168.159.1","port":8102,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"Chongqing","serviceName":"DEFAULT_GROUP@@userserver","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1713195216400,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+

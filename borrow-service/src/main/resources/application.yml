@@ -1,0 +1,76 @@
+server:
+  port: 8083
+
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8858
+      # 关闭Context收敛，这样被监控方法可以进行不同链路的单独控制
+      web-context-unify: false
+      # 将刚刚编写的请求映射设定为限流页面
+      block-page: /blocked
+
+feign:
+  sentinel:
+    enabled: true
+
+
+#spring:
+#  application:
+#    name: borrowserver
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://121.43.63.185:3306/cloudstudy
+#    username: root
+#    password: Dt7626761Wamm@@
+#    hikari:
+#      connection-timeout: 10000
+#      validation-timeout: 3000
+#      idle-timeout: 60000
+#      login-timeout: 5
+#      max-lifetime: 60000
+#      maximum-pool-size: 10
+#      minimum-idle: 5
+#      read-only: false
+#      connection-test-query: SELECT 1
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: localhost:8848
+#        # 非临时实例
+#        ephemeral: false
+#        cluster-name: Chengdu
+#    # 将loadbalancer的nacos支持打开，集成Nacos负载均衡
+#    loadbalancer:
+#      nacos:
+#        enabled: true
+#
+##开启日志
+#mybatis-plus:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#  global-config:
+#    banner: false
+#    db-config:
+#      id-type: auto
+#      table-prefix: db_
+#
+## feign日志配置
+#feign:
+#  client:
+#    config:
+#      default:
+#        loggerLevel: BASIC
+#  httpclient:
+#    enabled: true
+#    max-connections: 200
+#    max-connections-per-route: 50
+
+seata:
+  service:
+    grouplist:
+      default: localhost:8868
+    vgroup-mapping:
+      borrowserver-seata-service-group: default
+

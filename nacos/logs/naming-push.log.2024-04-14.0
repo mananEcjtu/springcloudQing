@@ -1,0 +1,8 @@
+2024-04-14 22:34:22,939 INFO DEFAULT_GROUP@@bookserver is changed, add it to push queue.
+
+2024-04-14 22:34:22,951 INFO serviceName: DEFAULT_GROUP@@bookserver changed, schedule push for: 192.168.0.106:57236, agent: Nacos-Java-Client:v1.4.2, key: 192.168.0.106,57236,364149667866300
+
+2024-04-14 22:34:22,951 INFO send udp packet: 192.168.0.106,57236,364149667866300
+
+2024-04-14 22:34:22,961 INFO received ack: {"type": "push-ack", "lastRefTime":"364149667866300", "data":""} from: 192.168.0.106:57236, cost: 10 ms, unacked: 0, total push: 1
+
